@@ -7,7 +7,6 @@ word_list = hangman_words.word_list
 
 print(hangman_art.logo)
 chosen_word = random.choice(word_list)
-print(chosen_word)
 
 placeholder = ""
 word_length = len(chosen_word)
@@ -51,4 +50,5 @@ while not game_over:
     if "_" not in display:
         game_over = True
         print("Hurrah! You guessed it correct. :)")
+
     print(hangman_art.stages[lives])
